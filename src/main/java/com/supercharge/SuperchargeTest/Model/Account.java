@@ -1,28 +1,43 @@
 package com.supercharge.SuperchargeTest.Model;
 
+import com.supercharge.SuperchargeTest.Exception.DecreaseBalanceException;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Account {
 
-    private String AccountID;
+    private final String AccountID;
     private Double Balance;
+    private List<Transaction> transactionHistory;
 
     public Account(String accountID, Double balance) {
         AccountID = accountID;
         Balance = balance;
+        this.transactionHistory = new ArrayList<>();
     }
 
     public String getAccountID() {
         return AccountID;
     }
 
-    public void setAccountID(String accountID) {
-        AccountID = accountID;
-    }
-
     public Double getBalance() {
         return Balance;
     }
 
-    public void setBalance(Double balance) {
-        Balance = balance;
+    public void increaseBalance(Double amountOfMoney) {
+        this.Balance += amountOfMoney;
+    }
+
+    public void decreaseBalance(Double amountOfMoney) throws DecreaseBalanceException {
+        if (this.Balance == 0) {
+            throw new DecreaseBalanceException("This is not allowed, because your account's balance is zero!");
+        }
+
+        this.Balance -= amountOfMoney;
+    }
+
+    public List<Transaction> getTransactionHistory() {
+        return transactionHistory;
     }
 }
