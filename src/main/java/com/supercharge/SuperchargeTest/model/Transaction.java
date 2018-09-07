@@ -26,4 +26,12 @@ public class Transaction {
         return transactionType;
     }
 
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "transactionDate=" + transactionDate +
+                ", amountOfMoney=" + amountOfMoney +
+                ", transactionType=" + transactionType +
+                '}';
+    }
 }
