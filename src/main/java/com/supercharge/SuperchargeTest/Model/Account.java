@@ -30,8 +30,8 @@ public class Account {
     }
 
     public void decreaseBalance(Double amountOfMoney) throws DecreaseBalanceException {
-        if (this.Balance == 0) {
-            throw new DecreaseBalanceException("This is not allowed, because your account's balance is zero!");
+        if (this.Balance == 0 || this.Balance < amountOfMoney) {
+            throw new DecreaseBalanceException("This is not allowed!");
         }
 
         this.Balance -= amountOfMoney;
