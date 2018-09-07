@@ -1,10 +1,10 @@
-package com.supercharge.SuperchargeTest.Service;
+package com.supercharge.SuperchargeTest.service;
 
-import com.supercharge.SuperchargeTest.Exception.DepositTransactionException;
-import com.supercharge.SuperchargeTest.Exception.TransferTransactionException;
-import com.supercharge.SuperchargeTest.Exception.WithdrawalTransactionException;
-import com.supercharge.SuperchargeTest.Model.Account;
-import com.supercharge.SuperchargeTest.Model.Transaction;
+import com.supercharge.SuperchargeTest.exception.DepositTransactionException;
+import com.supercharge.SuperchargeTest.exception.TransferTransactionException;
+import com.supercharge.SuperchargeTest.exception.WithdrawalTransactionException;
+import com.supercharge.SuperchargeTest.model.Account;
+import com.supercharge.SuperchargeTest.model.Transaction;
 
 public interface BankService {
 

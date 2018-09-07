@@ -1,6 +1,6 @@
-package com.supercharge.SuperchargeTest.Model;
+package com.supercharge.SuperchargeTest.model;
 
-import com.supercharge.SuperchargeTest.Exception.DecreaseBalanceException;
+import com.supercharge.SuperchargeTest.exception.DecreaseBalanceException;
 
 import java.util.ArrayList;
 import java.util.List;

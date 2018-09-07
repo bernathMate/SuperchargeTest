@@ -1,4 +1,4 @@
-package com.supercharge.SuperchargeTest.Model;
+package com.supercharge.SuperchargeTest.model;
 
 public enum TransactionType {
     DEPOSIT,
