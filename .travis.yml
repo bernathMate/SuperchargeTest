@@ -6,7 +6,3 @@ notifications:
     - bernath.mate.new@gmail.com
   on_success: always
   on_failure: always
-  
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-
-mvn test -B
